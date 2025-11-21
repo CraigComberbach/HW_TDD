@@ -1,0 +1,13 @@
+* voltage_divider.cir
+* Simple divider: VIN -> R_TOP -> VOUT -> R_BOT -> 0
+
+.param R_R1=10k
+.param R_R2=10k
+
+V1 VIN 0 DC 10
+
+R1 VIN VOUT {R_R1}
+R2 VOUT 0   {R_R2}
+
+* No analysis here: tests will supply .control with tran/ac/etc.
+.end

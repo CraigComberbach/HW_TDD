@@ -1,0 +1,11 @@
+
+---
+
+## 3. requirements.txt
+
+`requirements.txt`
+
+```text
+pytest
+pandas
+pyyaml

@@ -1,0 +1,27 @@
+(kicad_sch
+  (version 20231123)
+  (generator "manual")
+
+  (symbol "Device:R"
+    (property "Reference" "R1")
+    (property "Value" "10k")
+    (property "Tol" "1%")
+    (property "Pmax" "0.25 W")
+    (property "DUT" "VoltageDivider")
+    (property "Param" "R_R1"))
+
+  (symbol "Device:R"
+    (property "Reference" "R2")
+    (property "Value" "10k")
+    (property "Tol" "1%")
+    (property "Pmax" "0.25 W")
+    (property "DUT" "VoltageDivider")
+    (property "Param" "R_R2"))
+
+  (global_label
+    (text "VIN"))
+  (global_label
+    (text "VOUT"))
+  (global_label
+    (text "0"))
+)

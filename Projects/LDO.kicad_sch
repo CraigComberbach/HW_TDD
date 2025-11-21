@@ -1,0 +1,31 @@
+(kicad_sch
+  (version 20231123)
+  (generator "manual")
+
+  (symbol "Device:R"
+    (property "Reference" "RIN")
+    (property "Value" "0.1")
+    (property "Pmax" "1 W")
+    (property "DUT" "LDO")
+    (property "Param" "R_RIN"))
+
+  (symbol "Device:R"
+    (property "Reference" "RLOAD")
+    (property "Value" "100")
+    (property "Pmax" "0.25 W")
+    (property "DUT" "LDO")
+    (property "Param" "R_RLOAD"))
+
+  (symbol "Device:C"
+    (property "Reference" "COUT")
+    (property "Value" "10u")
+    (property "Vmax" "16 V")
+    (property "DUT" "LDO"))
+
+  (global_label
+    (text "IN"))
+  (global_label
+    (text "VOUT"))
+  (global_label
+    (text "0"))
+)

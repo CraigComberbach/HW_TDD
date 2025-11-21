@@ -1,0 +1,16 @@
+* ldo_example.cir
+* Crude behavioral LDO-ish regulator for demo purposes only
+
+.param R_RIN=0.1
+.param R_RLOAD=100
+
+VIN IN 0 DC 5
+RIN IN NIN {R_RIN}
+
+* Idealized LDO: VOUT = 3.3V, limited by VIN, with a bit of delay.
+E1 VOUT 0 VALUE = { V(NIN) > 3.5 ? 3.3 : V(NIN) - 0.2 }
+
+COUT VOUT 0 10u
+RLOAD VOUT 0 {R_RLOAD}
+
+.end

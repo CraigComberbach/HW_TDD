@@ -1,0 +1,43 @@
+# stress_rules.yaml
+#
+# Generic per-type rules. Symbols are matched by ref prefix via 'kind' in kicad_meta.
+# Units are parsed with the same helper as schematic fields.
+
+resistor:
+  metrics:
+    power:
+      severity: error
+      field: Pmax      # per-symbol field name
+      default: 0.25 W  # if missing
+capacitor:
+  metrics:
+    voltage:
+      severity: error
+      field: Vmax
+      default: 50 V
+inductor:
+  metrics:
+    current:
+      severity: error
+      field: Imax
+      default: 0.2 A
+diode:
+  metrics:
+    current:
+      severity: error
+      field: Imax
+      default: 0.5 A
+    voltage:
+      severity: error
+      field: Vmax
+      default: 100 V
+mosfet:
+  metrics:
+    current:
+      severity: error
+      field: Imax
+      default: 5 A
+    vds:
+      severity: error
+      field: Vmax
+      default: 30 V
